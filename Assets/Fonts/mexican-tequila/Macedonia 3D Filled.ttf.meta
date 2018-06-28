@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 7f0ba763987c0954b8a7a4f5ab3bfd1d
+timeCreated: 1530085097
+licenseType: Pro
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Macedonia 3D Filled
+  fontNames:
+  - Macedonia 3D Filled
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
