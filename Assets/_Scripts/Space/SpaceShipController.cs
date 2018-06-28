@@ -10,10 +10,15 @@ public class SpaceShipController : MonoBehaviour {
     bool isGameOver;
     public int score;
     public GameObject destroyParticle;
+
+    public AudioClip scoreClip, gemClip, deathClip;
+    public AudioSource Engine;
+    AudioSource speaker;
     // Use this for initialization
     void Awake () {
 
         instance = this;
+        speaker = GetComponent<AudioSource>();
 
     }
 	
@@ -35,6 +40,7 @@ public class SpaceShipController : MonoBehaviour {
                 {
                     speed = 15;
                     InvokeRepeating("IncreaseSpeed", 12, 12);
+                    Engine.volume = 1;
                     GameManager.instance.StartGame();
                 }
                     
@@ -61,6 +67,8 @@ public class SpaceShipController : MonoBehaviour {
         if (!isGameOver)
         {
             player.transform.rotation = Quaternion.Lerp(player.transform.rotation, playerPivot.transform.rotation, smooth * Time.deltaTime);
+            Engine.pitch = Mathf.Clamp(1.2f + (Mathf.Abs(player.transform.rotation.eulerAngles.x - playerPivot.transform.rotation.eulerAngles.x)/40),1.2f,2.2f);
+
             camPivot.Rotate(Vector3.up * speed * Time.deltaTime);
         }
             
@@ -71,7 +79,11 @@ public class SpaceShipController : MonoBehaviour {
        
         if (other.tag == "Wall")
         {
+            if(!isGameOver)
+            speaker.PlayOneShot(deathClip);
             isGameOver = true;
+
+            
             Destroy(transform.GetChild(0).gameObject);
             Instantiate(destroyParticle, transform);
             Handheld.Vibrate();
@@ -80,6 +92,7 @@ public class SpaceShipController : MonoBehaviour {
         if (other.tag == "Score")
         {
             score++;
+            speaker.PlayOneShot(scoreClip);
             GameManager.instance.UpdateScore(score);
             other.GetComponentInParent<WallProperties>().Reset();
         }
