@@ -9,13 +9,14 @@ public class GameManager : MonoBehaviour {
     public PlayerCam playerCam;
     public WallProperties[] Walls;
 
-    public Text HighScoreTxt,ScoreTxt;
+    public Text HighScoreTxt,ScoreTxt,coinTxt, HighScoreTxt2, ScoreTxt2, coinTxt2;
+
     public UIPop updateTxt;
     // Use this for initialization
     private void Awake()
     {
         instance = this;
-        
+        print(24 % 100);
         
     }
 
@@ -70,6 +71,15 @@ public class GameManager : MonoBehaviour {
     public void EndGame()
     {
         SaveScore();
+        HighScoreTxt2.text = HighScoreTxt.text;
+        ScoreTxt2.text = ScoreTxt.text;
+        coinTxt2.text = coinTxt.text;
+
+
+    }
+
+    public void RestartGame()
+    {
         Application.LoadLevel(0);
     }
 }
