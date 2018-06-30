@@ -66,7 +66,8 @@ public class SpaceShipController : MonoBehaviour {
 
         if (!isGameOver)
         {
-            player.transform.rotation = Quaternion.Lerp(player.transform.rotation, playerPivot.transform.rotation, smooth * Time.deltaTime);
+           
+            player.transform.rotation = Quaternion.Lerp(player.transform.rotation, playerPivot.transform.rotation, smooth*Time.deltaTime);
             Engine.pitch = Mathf.Lerp(Engine.pitch, Mathf.Clamp(1.2f + (Mathf.Abs(player.transform.rotation.eulerAngles.x - playerPivot.transform.rotation.eulerAngles.x)/40),1.2f,2.2f),smooth*Time.deltaTime);
 
             camPivot.Rotate(Vector3.up * speed * Time.deltaTime);
@@ -86,6 +87,7 @@ public class SpaceShipController : MonoBehaviour {
             
             Destroy(transform.GetChild(0).gameObject);
             Instantiate(destroyParticle, transform);
+            GetComponent<Collider>().enabled = false;
             Handheld.Vibrate();
         }
 

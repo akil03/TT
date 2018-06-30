@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 public class GameManager : MonoBehaviour {
     public static GameManager instance;
-    public GameObject MainMenuGUI,InGameUI;
+    public GameObject MainMenuGUI,InGameUI,EndGameUI;
     public PlayerCam playerCam;
     public WallProperties[] Walls;
 
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
     private void Awake()
     {
         instance = this;
-        print(24 % 100);
+        
         
     }
 
@@ -72,6 +72,8 @@ public class GameManager : MonoBehaviour {
     public void EndGame()
     {
         SaveScore();
+        InGameUI.SetActive(false);
+        EndGameUI.SetActive(true);
         HighScoreTxt2.text = HighScoreTxt.text;
         ScoreTxt2.text = ScoreTxt.text;
         coinTxt2.text = coinTxt.text;

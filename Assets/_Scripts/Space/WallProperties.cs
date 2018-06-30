@@ -23,7 +23,7 @@ public class WallProperties : MonoBehaviour {
             
 
 
-        Invoke("ChangeWall", 0.3f);
+        Invoke("ChangeWall", 0.55f);
     }
 
     public void ChangeWall()
