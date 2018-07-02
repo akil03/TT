@@ -9,7 +9,7 @@ public class SpaceShipController : MonoBehaviour {
     public Transform camPivot,player,playerPivot;
     bool isGameOver;
     public int score;
-    public GameObject destroyParticle;
+    public GameObject destroyParticle,coinParticle;
 
     public AudioClip scoreClip, gemClip, deathClip;
     public AudioSource Engine;
@@ -19,6 +19,7 @@ public class SpaceShipController : MonoBehaviour {
 
         instance = this;
         speaker = GetComponent<AudioSource>();
+        smooth = turnSpeed / 3;
 
     }
 	
@@ -31,14 +32,15 @@ public class SpaceShipController : MonoBehaviour {
 
             if (isGameOver)
             {
-                GameManager.instance.EndGame();
+                
             }
                 
             else
             {
                 if (speed == 0)
                 {
-                    speed = 15;
+                    speed = 11.5f+(((float)GameManager.instance.levelNumber)/2);
+                    speed = Mathf.Clamp(speed, 11.5f, 15);
                     InvokeRepeating("IncreaseSpeed", 12, 12);
                     Engine.volume = 1;
                     GameManager.instance.StartGame();
@@ -78,32 +80,56 @@ public class SpaceShipController : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
        
-        if (other.tag == "Wall")
+        if (other.tag == "Wall"&& !isGameOver)
         {
-            if(!isGameOver)
+            
+            speaker.volume=0.4f;
             speaker.PlayOneShot(deathClip);
             isGameOver = true;
+            GameManager.isGameOver = true;
 
-            
+            GameManager.instance.EndGame();
+
             Destroy(transform.GetChild(0).gameObject);
             Instantiate(destroyParticle, transform);
             GetComponent<Collider>().enabled = false;
             Handheld.Vibrate();
         }
 
+        if (other.tag == "Coin")
+        {
+            Instantiate(coinParticle, other.transform.position,Quaternion.identity);
+            other.transform.parent.parent.gameObject.SetActive(false);
+            speaker.PlayOneShot(scoreClip);
+            GameManager.instance.UpdateCoin();
+            Handheld.Vibrate();
+        }
+
         if (other.tag == "Score")
         {
-            score++;
+            //score++;
             speaker.PlayOneShot(scoreClip);
-            GameManager.instance.UpdateScore(score);
-            other.GetComponentInParent<WallProperties>().Reset();
+            //GameManager.instance.UpdateScore(score);
+            //other.GetComponentInParent<WallProperties>().Reset();
         }
 
     }
 
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Score")
+        {
+            score++;
+            
+            GameManager.instance.UpdateScore(score);
+            other.GetComponentInParent<WallProperties>().Reset();
+        }
+    }
+
     public void IncreaseSpeed()
     {
-        speed++;
+        speed+=0.5f;
 
         speed = Mathf.Clamp(speed, 0, 30);
         GameManager.instance.playerCam.RotateTest();

@@ -28,6 +28,10 @@ public class WallProperties : MonoBehaviour {
 
     public void ChangeWall()
     {
+        if (GameManager.isGameOver)
+            return;
+
+
         if (isLast)
         {
             Spawner.instance.SetRandomWallColor();

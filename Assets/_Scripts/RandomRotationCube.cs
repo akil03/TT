@@ -6,6 +6,7 @@ public class RandomRotationCube : MonoBehaviour {
     public float turnDuration;
     public float speed;
     public bool isRandom;
+    public Vector3 direction;
 	// Use this for initialization
 	void Start () {
         if (isRandom)
@@ -37,6 +38,6 @@ public class RandomRotationCube : MonoBehaviour {
 
     void FixedRotate()
     {
-        transform.Rotate(new Vector3(1, 1, 1) * speed);
+        transform.Rotate(direction * speed);
     }
 }

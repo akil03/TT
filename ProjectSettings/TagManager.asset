@@ -8,6 +8,7 @@ TagManager:
   - O
   - Wall
   - Score
+  - Coin
   layers:
   - Default
   - TransparentFX
