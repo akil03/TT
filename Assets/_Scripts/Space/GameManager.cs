@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour {
 
         LoadScore();
 
-        LevelCompleteBar.DOFillAmount(((float)totalScore % 200) / 200, 0.5f);
+        LevelCompleteBar.DOFillAmount(((float)totalScore % 100) / 100, 0.5f);
 
     }
 	
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour {
 
         totalScore = PlayerPrefs.GetInt("TotalScore");
 
-        levelNumber = (totalScore / 200) + 1;
+        levelNumber = (totalScore / 100) + 1;
 
         LevelTxt.text = "Level " + levelNumber;
         LevelTxt2.text = "Level " + levelNumber+ " / 100";
@@ -160,7 +160,7 @@ public class GameManager : MonoBehaviour {
             HighScoreTxt2.transform.DOScale(Vector3.one, 0.5f).OnComplete(() =>
             {
 
-                LevelCompleteBar.DOFillAmount(((float)totalScore%200)/200, 0.5f);
+                LevelCompleteBar.DOFillAmount(((float)totalScore% 100) / 100, 0.5f);
                 retryButton.DOScale(Vector3.one, 0.2f);
             });
         });

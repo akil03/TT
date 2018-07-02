@@ -39,8 +39,8 @@ public class SpaceShipController : MonoBehaviour {
             {
                 if (speed == 0)
                 {
-                    speed = 11.5f+(((float)GameManager.instance.levelNumber)/2);
-                    speed = Mathf.Clamp(speed, 11.5f, 15);
+                    speed = 11f+(((float)GameManager.instance.levelNumber)/3);
+                    speed = Mathf.Clamp(speed, 10, 15);
                     InvokeRepeating("IncreaseSpeed", 12, 12);
                     Engine.volume = 1;
                     GameManager.instance.StartGame();
