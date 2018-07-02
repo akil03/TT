@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.38340262, g: 0.3952117, b: 0.38029978, a: 1}
+  m_IndirectSpecularColor: {r: 0.38340145, g: 0.39521244, b: 0.38029912, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -376,7 +376,6 @@ GameObject:
   - component: {fileID: 53723192}
   - component: {fileID: 53723195}
   - component: {fileID: 53723194}
-  - component: {fileID: 53723193}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -399,28 +398,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &53723193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 53723191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 53723191}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &53723194
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -837,7 +814,6 @@ GameObject:
   - component: {fileID: 79039815}
   - component: {fileID: 79039818}
   - component: {fileID: 79039817}
-  - component: {fileID: 79039816}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -860,28 +836,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &79039816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 79039814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 79039814}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &79039817
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2658,7 +2612,6 @@ GameObject:
   - component: {fileID: 255691260}
   - component: {fileID: 255691263}
   - component: {fileID: 255691262}
-  - component: {fileID: 255691261}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -2681,28 +2634,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &255691261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 255691259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 255691259}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &255691262
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3220,7 +3151,6 @@ GameObject:
   - component: {fileID: 333191378}
   - component: {fileID: 333191381}
   - component: {fileID: 333191380}
-  - component: {fileID: 333191379}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -3243,28 +3173,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &333191379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 333191377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 333191377}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &333191380
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3815,7 +3723,6 @@ GameObject:
   - component: {fileID: 392956823}
   - component: {fileID: 392956826}
   - component: {fileID: 392956825}
-  - component: {fileID: 392956824}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -3838,28 +3745,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &392956824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 392956822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 392956822}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &392956825
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4531,7 +4416,6 @@ GameObject:
   - component: {fileID: 475206772}
   - component: {fileID: 475206775}
   - component: {fileID: 475206774}
-  - component: {fileID: 475206773}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -4554,28 +4438,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &475206773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 475206771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 475206771}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &475206774
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4881,7 +4743,6 @@ GameObject:
   - component: {fileID: 532518272}
   - component: {fileID: 532518275}
   - component: {fileID: 532518274}
-  - component: {fileID: 532518273}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -4904,28 +4765,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &532518273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 532518271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 532518271}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &532518274
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5061,7 +4900,6 @@ GameObject:
   - component: {fileID: 577444189}
   - component: {fileID: 577444192}
   - component: {fileID: 577444191}
-  - component: {fileID: 577444190}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -5084,28 +4922,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &577444190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 577444188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 577444188}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &577444191
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5342,7 +5158,6 @@ GameObject:
   - component: {fileID: 625093816}
   - component: {fileID: 625093819}
   - component: {fileID: 625093818}
-  - component: {fileID: 625093817}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -5365,28 +5180,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &625093817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 625093815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 625093815}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &625093818
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5670,7 +5463,6 @@ GameObject:
   - component: {fileID: 646509939}
   - component: {fileID: 646509942}
   - component: {fileID: 646509941}
-  - component: {fileID: 646509940}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -5693,28 +5485,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &646509940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 646509938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 646509938}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &646509941
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8998,7 +8768,6 @@ GameObject:
   - component: {fileID: 1024135061}
   - component: {fileID: 1024135064}
   - component: {fileID: 1024135063}
-  - component: {fileID: 1024135062}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -9021,28 +8790,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1024135062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1024135060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 1024135060}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &1024135063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9982,7 +9729,6 @@ GameObject:
   - component: {fileID: 1135565232}
   - component: {fileID: 1135565235}
   - component: {fileID: 1135565234}
-  - component: {fileID: 1135565233}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -10005,28 +9751,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1135565233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1135565231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 1135565231}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &1135565234
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10712,7 +10436,6 @@ GameObject:
   - component: {fileID: 1257680086}
   - component: {fileID: 1257680089}
   - component: {fileID: 1257680088}
-  - component: {fileID: 1257680087}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -10735,28 +10458,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1257680087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1257680085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 1257680085}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &1257680088
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11545,7 +11246,6 @@ GameObject:
   - component: {fileID: 1364593211}
   - component: {fileID: 1364593214}
   - component: {fileID: 1364593213}
-  - component: {fileID: 1364593212}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -11568,28 +11268,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1364593212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1364593210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 1364593210}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &1364593213
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13839,7 +13517,6 @@ GameObject:
   - component: {fileID: 1760012724}
   - component: {fileID: 1760012727}
   - component: {fileID: 1760012726}
-  - component: {fileID: 1760012725}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -13862,28 +13539,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1760012725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1760012723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 1760012723}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &1760012726
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16324,7 +15979,6 @@ GameObject:
   - component: {fileID: 1995829126}
   - component: {fileID: 1995829129}
   - component: {fileID: 1995829128}
-  - component: {fileID: 1995829127}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -16347,28 +16001,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1995829127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1995829125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 1995829125}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &1995829128
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17246,7 +16878,6 @@ GameObject:
   - component: {fileID: 2063814573}
   - component: {fileID: 2063814576}
   - component: {fileID: 2063814575}
-  - component: {fileID: 2063814574}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -17269,28 +16900,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2063814574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2063814572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 2063814572}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &2063814575
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18089,7 +17698,6 @@ GameObject:
   - component: {fileID: 2146962774}
   - component: {fileID: 2146962777}
   - component: {fileID: 2146962776}
-  - component: {fileID: 2146962775}
   m_Layer: 0
   m_Name: WallCoin(Clone)
   m_TagString: Untagged
@@ -18112,28 +17720,6 @@ Transform:
   m_Father: {fileID: 2017810244}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2146962775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2146962773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877329538d7e8e5498f7af0b406d49c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Walls:
-  - {fileID: 1676450685492668, guid: 27a36f816fd11c848b6820267b8b14c7, type: 2}
-  - {fileID: 1772066459203276, guid: 553315c1b67965741b480e15b6566211, type: 2}
-  - {fileID: 1546570622250858, guid: 4b5fa9b573c69ac4bb23b7fe8d076534, type: 2}
-  - {fileID: 1346721675406088, guid: e7c2293d7505a3d45b93a2fd51b212b5, type: 2}
-  - {fileID: 1522894227046644, guid: 082737371c18e454bb0e7bad940404ec, type: 2}
-  - {fileID: 1278604445761048, guid: 7bb00ba49c4a533469953a431f956c47, type: 2}
-  - {fileID: 1867201986193484, guid: f9911592049854f4aab076f1c71dc7d6, type: 2}
-  - {fileID: 2146962773}
-  isFirst: 0
-  isLast: 0
 --- !u!23 &2146962776
 MeshRenderer:
   m_ObjectHideFlags: 0

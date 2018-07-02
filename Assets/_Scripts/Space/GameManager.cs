@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour {
         levelNumber = (totalScore / 200) + 1;
 
         LevelTxt.text = "Level " + levelNumber;
-        LevelTxt2.text = "Level " + levelNumber;
+        LevelTxt2.text = "Level " + levelNumber+ " / 100";
 
         coinTxt2.text = totalCoinCount.ToString();
 
