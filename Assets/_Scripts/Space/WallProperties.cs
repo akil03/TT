@@ -19,10 +19,6 @@ public class WallProperties : MonoBehaviour {
 
     public void Reset()
     {
-        
-            
-
-
         Invoke("ChangeWall", 0.55f);
     }
 

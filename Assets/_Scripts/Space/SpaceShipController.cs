@@ -14,6 +14,7 @@ public class SpaceShipController : MonoBehaviour {
     public AudioClip scoreClip, gemClip, deathClip;
     public AudioSource Engine;
     AudioSource speaker;
+    GameObject hitObject;
     // Use this for initialization
     void Awake () {
 
@@ -29,10 +30,8 @@ public class SpaceShipController : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0))
         {
-
             if (isGameOver)
             {
-                
             }
                 
             else
@@ -42,39 +41,28 @@ public class SpaceShipController : MonoBehaviour {
                     speed = 11f+(((float)GameManager.instance.levelNumber)/3);
                     speed = Mathf.Clamp(speed, 10, 15);
                     InvokeRepeating("IncreaseSpeed", 12, 12);
-                    Engine.volume = 1;
+                    Engine.volume = 0.2f;
                     GameManager.instance.StartGame();
-                }
-                    
-               
+                }         
             }
-                
         }
 
 
         if (Input.GetMouseButton(0))
         {
            // thresholdTxt.text = Mathf.Abs(MouseHelper.mouseDelta.x).ToString();
-
-
-
             if (Mathf.Abs(MouseHelper.mouseDelta.x) > threshold)
             {
                 playerPivot.transform.Rotate(Vector3.right * MouseHelper.mouseDelta.x * turnSpeed * Time.deltaTime);
-
             }
-            
         }
 
         if (!isGameOver)
-        {
-           
+        {           
             player.transform.rotation = Quaternion.Lerp(player.transform.rotation, playerPivot.transform.rotation, smooth*Time.deltaTime);
             Engine.pitch = Mathf.Lerp(Engine.pitch, Mathf.Clamp(1.2f + (Mathf.Abs(player.transform.rotation.eulerAngles.x - playerPivot.transform.rotation.eulerAngles.x)/40),1.2f,2.2f),smooth*Time.deltaTime);
-
             camPivot.Rotate(Vector3.up * speed * Time.deltaTime);
         }
-            
     }
 
     private void OnTriggerEnter(Collider other)
@@ -86,14 +74,13 @@ public class SpaceShipController : MonoBehaviour {
             speaker.volume=0.4f;
             speaker.PlayOneShot(deathClip);
             isGameOver = true;
+            hitObject = other.gameObject.transform.parent.transform.parent.gameObject;
             GameManager.isGameOver = true;
-
             GameManager.instance.EndGame();
-
-            Destroy(transform.GetChild(0).gameObject);
+            transform.GetChild(0).gameObject.SetActive(false);
             Instantiate(destroyParticle, transform);
-            GetComponent<Collider>().enabled = false;
-            Handheld.Vibrate();
+            hitObject.SetActive(false);
+            Handheld.Vibrate();;
         }
 
         if (other.tag == "Coin")
@@ -132,6 +119,26 @@ public class SpaceShipController : MonoBehaviour {
         speed+=0.5f;
 
         speed = Mathf.Clamp(speed, 0, 30);
+
         GameManager.instance.playerCam.RotateTest();
+    }
+
+    public void ResumeGame()
+    {
+        Invoke("ResumeMovement", 0.5f);
+        GameObject currentplayer = transform.GetChild(0).gameObject;
+        currentplayer.SetActive(true);
+        GameManager.instance.UpdateScore(score);
+    }
+
+    void ResumeMovement()
+    {
+        isGameOver = false;
+        Invoke("EnablePlayerCollider", 2f);
+    }
+
+    public void EnablePlayerCollider()
+    {
+        hitObject.SetActive(true);
     }
 }
